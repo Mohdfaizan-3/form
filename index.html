@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      margin: 0 .1em;
+
+    }
+
+    .text-area {
+      resize: vertical;
+    }
+
+    .one {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .one > * {
+      margin-bottom: 1em;
+    }
+
+
+
+    .two {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .two > * {
+      margin-bottom: 2em;
+    }
+
+    .add-on {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    form {
+      display: flex;
+      flex-direction: row;
+      justify-content:space-around;
+      align-items:flex-start;
+    }
+
+    input {
+    height: 40px;
+    
+     border-radius: 5px;
+    }
+
+    .btn{
+        padding: 1em;
+        border-radius: 5px
+    }
+
+.label1 {
+    border: solid black 2px;
+    padding: 11.8px;
+    border-right: 0;
+}
+.l{
+    border-left: 0ch;
+border-radius: 0%;
+}
+    
+
+
+  </style>
+
+  <body>
+    <div class="container">
+      <form>
+        <div class="one">
+          <label for="name">Text-Field*</label>
+          <input type="text" id="name" />
+
+          <label for="vehicle">Select Field</label>
+
+          <select id="vehicle">
+            <option>car</option>
+            <option>bike</option>
+            <option>bus</option>
+          </select>
+
+          <label>Text Area *</label>
+          <textarea
+            id="textarea"
+            rows="4"
+            class="text-area"
+            placeholder="Text Area"
+          ></textarea>
+          <label>Text Field with Add-ons*</label>
+          <div class="add-on">
+            <label class="label1">Label</label>
+            <input class="l" type="text" placeholder="input Text" />
+            <button class="btn">Button</button>
+          </div>
+        </div>
+
+        <div class="two">
+          <input placeholder="search" />
+
+          <div>
+            <button>+</button>
+            <span>1</span>
+            <button>-</button>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              id="vehicle1"
+              name="vehicle1"
+              value="Bike"
+            />
+            <label for="vehicle1"> checkbox</label
+            ><br />
+        
+          
+          </div>
+
+          <div>
+            <input
+              type="radio"
+              id="html"
+              name="fav_language"
+              value="HTML"
+            />
+           
+            <label for="javascript">radio</label>
+          </div>
+
+       
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
